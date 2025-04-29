@@ -87,13 +87,6 @@ console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
 /*
 Exercise 7: calculateTip()
 
-Create a function called calculateTip. It should take two arguments: 
-the bill amount and the tip percentage (as a whole number). 
-The function should return the amount of the tip.
-
-Example: calculateTip(50, 20) should return 10.
-
-Complete the exercise in the space below:
 */
 
 const calculateTip = (x, y) => {
@@ -153,3 +146,29 @@ const calculateGrade = (score) => {
 };
 
 console.log("Exercise 10 Result:", calculateGrade(85));
+
+/*
+Exercise 11: createUsername()
+
+*/
+
+const createUsername = (first, last) => {
+  const first3 = first.substring(0, 3);
+  const last3 = last.substring(0, 3);
+  const firstL = first.length;
+  const lastL = last.length;
+
+  return first3 + last3 + (firstL + lastL);
+};
+console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
+
+/*
+Exercise 12: numArgs()
+
+*/
+
+const numArgs = (a, b, c, d) => {
+  const args = [a, b, c, d];
+  return args.length;
+};
+console.log("Exercise 12 Result:", numArgs(1, 2, 3, 4));
